@@ -40,7 +40,7 @@ class HTMLDecoder
             return substr($value, 1, -1);
         }, $allTags[0]);
         $tags[] = count($allTags[0]) - 1;
-        
+
         return array_unique($tags);
     }
 }
@@ -53,7 +53,6 @@ $b = (new HTMLDecoder($a))
     ->getAllTags();
 
 pr($b); //массив содержит все теги на странице, последний элемент массива содержит количество всех тегов
-
 
 function pr(array $array): void
 {
