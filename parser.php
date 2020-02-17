@@ -40,6 +40,7 @@ class HTMLDecoder
             return substr($value, 1, -1);
         }, $allTags[0]);
         $tags[] = count($allTags[0]) - 1;
+        
         return array_unique($tags);
     }
 }
